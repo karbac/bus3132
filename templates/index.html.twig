@@ -1,0 +1,54 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    Page d'accueil
+{% endblock %}
+
+
+{% block body %}  
+    {% use 'header.html.twig' %}
+    <div class="container d-flex justify-content-around">
+        <div class="dropdown">
+            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Analyse de Substance
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">En France</a>
+                <a class="dropdown-item" href="#">Au Bus 31/32</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Un projet
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Historique</a>
+                <a class="dropdown-item" href="#">Valeurs</a>
+                <a class="dropdown-item" href="#">Missions</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            L'équipe
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Equipe</a>
+                <a class="dropdown-item" href="#">Partenaires collecteurs</a>
+                <a class="dropdown-item" href="#">Réseaux</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Réduction des Risques (RDR)
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Infos</a>
+                <a class="dropdown-item" href="#">Ressources utiles</a>
+                <a class="dropdown-item" href="#">Alertes</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}
